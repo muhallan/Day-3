@@ -1,4 +1,5 @@
 def wordcount(words):
+    """ get the number of occurrences of words in a given sentence """
     if not isinstance(words, str):
         raise TypeError("not a string type")
 
@@ -11,4 +12,3 @@ def wordcount(words):
         else:
             word_counter[word] += 1
     return word_counter
-    
